@@ -5,7 +5,8 @@ This repository shows how to generate aruco boards, calibrate a camera using tho
 1. Project was built using a VM running Ubuntu 18.04
 2. Install opencv-contrib.
     - `pip install opencv-contrib-python`
-2. `git clone https://github.com/ddelago/Aruco-Marker-Calibration-and-Pose-Estimation.git`
+3. `git clone https://github.com/ddelago/Aruco-Marker-Calibration-and-Pose-Estimation.git`
+4. Other various packages as well, just `pip install` them as you encounter them. 
 
 ### Generating ArUco Calibration Markers
 There are three ways to generate calibration markers. 
