@@ -59,7 +59,6 @@ axis = np.float32([[-.5,-.5,0], [-.5,.5,0], [.5,.5,0], [.5,-.5,0],
 
 # Make output image fullscreen
 cv2.namedWindow('ProjectImage',cv2.WINDOW_NORMAL)
-cv2.namedWindow('InputImage',cv2.WINDOW_NORMAL)
 
 cam = cv2.VideoCapture(0)
 cam.set(cv2.CAP_PROP_AUTOFOCUS, 0)
@@ -71,12 +70,6 @@ while(cam.isOpened()):
     if ret == True:
         # grayscale image
         gray = cv2.cvtColor(ProjectImage, cv2.COLOR_BGR2GRAY)
-
-        # Display our image
-        cv2.imshow('InputImage', ProjectImage)
-
-        # Make background black
-        ProjectImage = np.zeros((720, 1280, 3), np.uint8)
         
         # Detect Aruco markers
         corners, ids, rejectedImgPoints = aruco.detectMarkers(gray, ARUCO_DICT, parameters=ARUCO_PARAMETERS)
