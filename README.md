@@ -22,7 +22,7 @@ There are three ways to generate calibration markers.
 
 ### Calibration
 In orer to track objects correctly, you need to use a calibration using the camera that you will use! The calibration files in this repository were created using a Logitech C920 camera.
-![alt text](https://github.com/ddelago/AR-Projection-Mapping/blob/master/pictures/stereoCalib.PNG)
+![alt text](https://github.com/ddelago/Aruco-Marker-Calibration-and-Pose-Estimation/blob/master/doc/ChArucoCalib.PNG)
 1. Record a video of your ChAruco board in various positions. A 10-20 second long video will work. 
 2. Use the `calibration_ChAruco.py` program to calibrate your camera. You need to specify where your calibration video is as well as the minimum number of valid ChAruco board captures you want. At least 40 valid captures worked for me. 
     `python calibration_ChAruco.py -v calibration_video.webm -c 80`
@@ -31,3 +31,4 @@ In orer to track objects correctly, you need to use a calibration using the came
 After calibration, the tracking of each marker can now be performed.
 - Use `python pose_marker.py` to draw an axis on each Aruco marker found.
 - Use `python pose_marker.py cube` to draw a cube instead.
+![alt text](https://github.com/ddelago/Aruco-Marker-Calibration-and-Pose-Estimation/blob/master/doc/PoseEstimation.gif)
