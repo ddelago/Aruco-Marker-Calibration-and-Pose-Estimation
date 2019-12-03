@@ -1,4 +1,4 @@
-# Aruco Makrer Calibration and Pose Estimation
+# Aruco Marker Calibration and Pose Estimation
 This repository shows how to generate aruco boards, calibrate a camera using those boards, and live pose estimation on those boards.
 
 ### Installing
@@ -29,6 +29,5 @@ In orer to track objects correctly, you need to use a calibration using the came
 
 ### Marker Tracking
 After calibration, the tracking of each marker can now be performed.
-![alt text](https://github.com/ddelago/AR-Projection-Mapping/blob/master/pictures/perspTrans.PNG)
 - Use `python pose_marker.py` to draw an axis on each Aruco marker found.
 - Use `python pose_marker.py cube` to draw a cube instead.
