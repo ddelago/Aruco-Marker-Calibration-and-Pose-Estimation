@@ -1,10 +1,6 @@
 # The following code is used to watch a video stream, detect Aruco markers, and use
 # a set of markers to determine the posture of the camera in relation to the plane
 # of markers.
-#
-# Assumes that all markers are on the same plane, for example on the same piece of paper
-#
-# Requires camera calibration (see the rest of the project for example calibration)
 
 import numpy as np
 import cv2
